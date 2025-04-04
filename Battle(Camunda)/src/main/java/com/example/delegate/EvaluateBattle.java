@@ -11,7 +11,7 @@ public class EvaluateBattle implements JavaDelegate {
     private static final Logger LOG = LoggerFactory.getLogger(EvaluateBattle.class);
 
     @Override
-    public void execute(DelegateExecution delegateExecution) throws Exception {
+    public void execute(DelegateExecution delegateExecution){
         int warriors = (int) delegateExecution.getVariable("warriors");
         int enemyWarriors = (int) delegateExecution.getVariable("enemyWarriors");
         boolean isWin = false;
